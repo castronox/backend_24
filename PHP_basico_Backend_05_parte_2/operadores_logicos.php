@@ -48,7 +48,25 @@
                    echo ($mates >=5 or $fisica >=5) ? 'SI':'NO';
                    echo "</p>";           
             ?>
-            
+           
+           
+     <h1>Operador @</h1>
+	<p>Es un operador para el contro de errores</p>    
+	
+			
+			<?php 
+			
+			//Generará un WARNING!
+			include 'noexsiste.php';
+			echo "<br>";
+			
+			//Ignorará el warning
+			@include 'noexsiste.php';
+			echo "<br>";
+			
+			
+			
+			?>        
     
 
 
