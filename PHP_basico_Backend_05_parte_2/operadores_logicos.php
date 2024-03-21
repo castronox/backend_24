@@ -12,21 +12,43 @@
 	
 	<p>Los operadores lógicos nos permitirán evaluar condiciones complejas, uniendo distintas expresiones para dar un resultado final.</p>
 	    
-    <?php   
-        $mates = 7;
-        $fisica= 3;
+            <?php   
+                $mates = 7;
+                $fisica= 3;
+                
+                    echo "<p> En mates tienes $mates y en física $fisica.</p>";
         
-            echo "<p> En mates tienes $mates y en física $fisica.</p>";
-
-            echo "<p> Has aprobado mates y física? ";
-            echo $mates >=5  && $fisica >=5 ? 'SI' : 'NO';
-            echo "</p>"; 
-            
-            echo "<p>Has aprobado mates o física? ";
-            echo $mates >=5 || $fisica >= 5 ? 'SI' : 'NO';
-            echo "</p>";
-    ?>
+                    echo "<p> Has aprobado mates y física? ";
+                    echo $mates >=5  && $fisica >=5 ? 'SI' : 'NO';
+                    echo "</p>"; 
+                    
+                    echo "<p>Has aprobado mates o física? ";
+                    echo $mates >=5 || $fisica >= 5 ? 'SI' : 'NO';
+                    echo "</p>";
+            ?>
     
+    
+    <h1>Operadores AND OR y XOR</h1>
+    
+    <p>Tienen menor presencia que los operadores && y || , así que habrá que considerar el uso del paréntesis si lo usamos.</p>
+    
+            <?php 
+            
+                $mates = 2 ; 
+                $fisica = 8;
+                    
+                    echo "<p> En mates tienes $mates y en física tienes $fisica.</p>";
+                    
+                    echo "<p>Has aprovado mates y física? ";
+                    echo ($mates >=5 and $fisica >=5) ?'SI' : 'NO';
+                    echo "</p>";
+                    
+                    
+                   echo "<p>Has aprovado mates o física? ";
+                   echo ($mates >=5 or $fisica >=5) ? 'SI':'NO';
+                   echo "</p>";           
+            ?>
+            
     
 
 
