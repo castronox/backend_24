@@ -4,7 +4,7 @@
     
     $_SESSION['nombre'] = 'Pepe'; //Guardamos algo en sesión
     
-    //Seguimos con las sesiones 
+    //Seguimos con las sesiones  //otro ejemplo
     ?>
 
 
