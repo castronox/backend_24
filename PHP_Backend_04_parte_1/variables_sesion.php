@@ -2,7 +2,8 @@
     
     session_start(); // Inicia o reanuda la sesión
     
-    $_SESSION['nombre'] = 'Pepe'; //Guardamos algo en sesión
+    $_SESSION['nombre'] = 'Pepe'; //Guardamos algo en sesión otra vez 
+    
     
     //Seguimos con las sesiones  //otro ejemplo
     ?>
