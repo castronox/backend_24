@@ -23,7 +23,7 @@
      * $http_response_header ------> Encabezado de respuesta http
      * $php_errormsg         ------> Último mensaje de error que se produjo.
      * $argc                 ------> Número de argumentos pasados a un script (CLI)
-     * $argv                 ------> Array de argumentos pasados a un script (CLI)))))))
+     * $argv                 ------> Array de argumentos pasados a un script (CLI)
      * 
      * 
      */
