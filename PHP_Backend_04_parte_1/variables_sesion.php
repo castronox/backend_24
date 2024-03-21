@@ -23,7 +23,7 @@
     prueba a cambiar a la pagina 2 y verás como es recordado entre distintas peticiones.</p> 
     
     
-    <a href="pagina2.php">Página 2</a>
+    <a href="variables_sesion_2.php">Página 2</a>
 
 
 
