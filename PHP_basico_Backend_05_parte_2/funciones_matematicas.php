@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	
+	<h1>Funciones matematicas en PHP</h1>
     
     <?php   
     $radianes = 1/4*pi(); //Número PI
