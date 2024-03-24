@@ -27,7 +27,8 @@
 
 <form method="post" action "<?php echo $_SERVER['PHP_SELF'];?>">
 <label for = "kilometros">Kilometros para conversión a millas: </label>
-<input type="number" id="kilometros" name="kilometros" value="<?php echo $kilometros; ?>">
+<input type="number" id="kilometros" name="kilometros" value="<?php echo $kilometros
+; ?>">
 <input type="submit" name="calcular" value="calcular">
 </form>
 
@@ -37,7 +38,7 @@ if(isset($_POST['kilometros'])) {
     if($resultado !== ''){
         echo "<p>El resultado de la conversión es: " .round($resultado, $decimales) . " Mp/H</p>";
     }else{
-        echo "<p>Escribe una dato a calcular porfavor";
+        echo "<p>Escribe una dato a calcular porfavor</p>";
     }
 }
 
