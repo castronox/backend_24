@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1 PHP</title>
+</head>
 <body>
    <?php  
     
@@ -13,11 +14,11 @@
         $decimales = 1;
         $resultado = '';
         
-            if (!empty($_POST['temperatura'])){
-                
-                $resultado = ($temperatura - 32) * 5/9;
-            
-            }
+        if (!empty($_POST['temperatura'])){
+                    
+             $resultado = ($temperatura - 32) * 5/9;
+           
+       }
     }
     
    ?>
