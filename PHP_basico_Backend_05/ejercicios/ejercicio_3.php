@@ -17,7 +17,7 @@
         
         $resultado = '';
         
-        if (!empty($_POST['base'] or $_POST['altura'])){
+        if (!empty($_POST['base'] and $_POST['altura'])){
             
             $resultado = $base * $altura /2;
         }
@@ -39,11 +39,14 @@
     </form>
     
     <?php 
-    if (isset($_POST['base']) or isset( $_POST['altura'] )) {
-        if($resultado !== ''){
+    if (isset($_POST['base']) and isset( $_POST['altura'] )) {
+        
+        if( !empty($base and $altura)){
             echo "<p> El resultado de el área es: " . round($resultado, $decimales) . "</p>";
+            
         }else{
             echo "<p> Escribe datos para calcular porfavor</p>";
+            
         }
     }
         
