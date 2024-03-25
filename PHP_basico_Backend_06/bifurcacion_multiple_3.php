@@ -6,6 +6,8 @@
     <title>Bifurcación múltiple p.3 PHP</title>
 </head>
 <body>
+
+<h1>Bifurcación múltiple con RANGOS</h1>
     
     <?php   
     
