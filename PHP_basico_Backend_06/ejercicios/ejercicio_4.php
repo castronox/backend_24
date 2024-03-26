@@ -10,6 +10,21 @@
     <?php 
     echo "<h1>Ejercicio 2 de backend _ 06</h1>";
     
+    $limite = 1;
+    $multiplo = 50;
+    $lista =[] ;
+    
+    for ($i = 1000; $i > $limite; $i--) {
+        if($i % $multiplo == 0)
+            
+            $lista = [ $i, $multiplo];
+            echo $i. " es múltiplo de " .$multiplo . "<br>";
+            
+            
+    }
+    
+    
+    
     
     ?>
 
