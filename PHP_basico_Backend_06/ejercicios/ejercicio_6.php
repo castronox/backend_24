@@ -23,6 +23,8 @@
              echo "El resultado de $i x $j es: ". $i * $j .'<br>';
         }
     }
+    
+    
     ?>
 
 
