@@ -8,6 +8,7 @@
 <body>
     
     <?php  
+    echo "<h2>Arrays asociativos en PHP</h2>";
     
     #Creación rapida de array asociativo.
     $persona = [
@@ -17,6 +18,21 @@
     ];
     
     
+        echo "<pre>";
+        print_r($persona);
+        echo "</pre>";
+    
+    echo "<p>Datos Personales:</p>";
+    
+    #ForEach para recuperar solamente los valores
+    foreach($persona as $valor)
+        echo "$valor<br>";
+        
+    echo "<p>Clave y Valor de Datos Personales <br>";
+    
+    #Foreach recupera la clave y valor
+    foreach ($persona as $clave=>$valor)
+        echo "$clave : $valor<br>";
     ?>
 
 
