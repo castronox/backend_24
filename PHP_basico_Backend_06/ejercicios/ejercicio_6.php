@@ -6,6 +6,8 @@
     <title>Ejercicio 6 PHP</title>
 </head>
 <body>
+
+<h1>Ejercicio 6 de Backend _ 06</h1>
     
     <?php   
     
