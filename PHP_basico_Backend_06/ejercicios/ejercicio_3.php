@@ -11,7 +11,7 @@
     
     echo "<h1>Ejercicio 3 Backend _ 06</h1>";
     
-    for ($i = 0; $i <101; $i++) {
+    for ($i = 0; $i <101; $i+=2) {
         Echo "Esta es la iteración : $i <br>";
     }
     
