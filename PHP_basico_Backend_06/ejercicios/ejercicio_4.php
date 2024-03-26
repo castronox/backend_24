@@ -15,12 +15,10 @@
     
     
     for ($i = 1000; $i > $limite; $i--) {
-        if($i % $multiplo == 0)
-            
-            
+        
+        if($i % $multiplo == 0)         
             echo $i. " es múltiplo de " .$multiplo . "<br>";
-            
-            
+       
     }
     
     
