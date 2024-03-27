@@ -29,7 +29,7 @@
     $conexion -> query($consulta);
     
     #Muestra el resultado
-    echo "Todo OK, el registro de connexión es $conexion->insert_id </p>";
+    echo "<p>Todo OK, el registro de connexión es $conexion->insert_id </p>";
     
     
     ?>
