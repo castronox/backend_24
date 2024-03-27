@@ -12,7 +12,7 @@
     
     #Ejecuta los scripts de conectar y recuperar libros
     include 'scripts/conectar.php';
-    include 'scripts/recuperLibros.php';
+    include 'scripts/recuperarLibros.php';
     
     #Carga la vista del listado
     include 'views/booklist.php';
