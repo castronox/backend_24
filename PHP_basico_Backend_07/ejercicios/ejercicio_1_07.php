@@ -95,7 +95,7 @@
         $consulta = 
         "INSERT INTO socios(dni ,nombre ,apellidos ,nacimiento ,email ,direccion ,cp ,poblacion ,provincia ,telefono )
          VALUES ('$dni','$nombre','$apellidos','$nacimiento','$email','$direccion','$cp','$poblacion','$provincia','$telefono')";
-        
+        #QUITA LAS COMILLAS DE LOS CAMPOS GUARDADOS QUE NO SEAN STRING
         
         echo $conexion -> query ($consulta) ? 'Guardado OK' : 'Guardado NOK';
     }
