@@ -7,7 +7,7 @@
     #Prepara una lista de libros
     $libros = [];
     
-    while($libro = $resultado->fetch_object('libro')){
+    while($libro = $resultado->fetch_object('Libro')){
         $libros[] = $libro; # Y lo mete en la lista
     }
     

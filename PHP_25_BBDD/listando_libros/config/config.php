@@ -12,7 +12,7 @@ define('DB_USER', 'root');          #USUARIO
 define('DB_PASS', '');              #CONTRASEÑA
 define('DB_NAME', 'biblioteca');    #NOMBRE_BBDD
 define('DB_PORT', 3306);            #PUERTO
-define('DB_PASS', 'utf8');          #CODIFICACIÓN UTF-8
+define('DB_CHARSET', 'utf8');          #CODIFICACIÓN UTF-8
     
 
 ?>
