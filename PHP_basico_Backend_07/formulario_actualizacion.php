@@ -31,8 +31,7 @@
     		<input type ="text" name="usuario" value="<?= $usuario ->nombre ?>" />
     		
     		<br/>
-    		
-    		
+    		    		
     		      <!-- Para los inputs "radio", imprimiremos "checked" en el que corresponda -->
     		      <input type = "radio" name ="sexo" value="H" <?= $usuario -> sexo =='H' ? 'checked' : '' ?> />
     		      <label>Hombre</label>
@@ -41,20 +40,35 @@
     		      <label>Mujer</label>
     		      
     		      <br/>
-    		      
-    		      
+    		          		      
     		      <!-- Para los desplegables, imprimiremos "selected" en el que corresponda -->
     		      
     		      <select name="provincia">    		      
-    		      	<option <?= $u -> provincia == 'BAR' ? 'selected' : ''?>
+    		      	<option <?= $usuario -> provincia == 'BAR' ? 'selected' : ''?>
     		      			value="BAR">Barcelona</option>
     		      			
-    		        <option <?= $u -> provincia == 'GI' ? 'selected' : ''?>
+    		        <option <?= $usuario -> provincia == 'GI' ? 'selected' : ''?>
     		      			value="GI">Girona</option>    
     		      </select>   
     </fieldset>
     
+    <fieldset>
+
+    	<legend>Vehículo</legend>
+    			  
+    			  <input type = "checkbox" name = "bici" value = "b"    			  		
+    			  		<?= empty ( $usuario -> bici ) ? '' : 'checked' ?> />
+    			  	<label>Tengo Bici</label>
+    			  <br/>
+    			  
+    			  <input type = "checkbox" name = "moto" value = "m"    			  		
+    			  		<?= empty ( $usuario -> moto ) ? '' : 'checked' ?> />
+    			  	<label>Tengo Moto</label>
+    			  <br/>
+    </fieldset>
     
+    <input type = "submit" name="guardar" value = "guardar" />
+    <input type = "reset" value ="reset" /> 
     
     </form>
 
