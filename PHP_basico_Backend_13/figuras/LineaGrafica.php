@@ -1,17 +1,29 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento PHP</title>
-</head>
-<body>
+<?php   
+class LineaGrafica extends Linea{
     
-    <?php   
+    # CONSTANTES DE CLASE
+    const SOLID=0; const DASHED=1; const DOTTED=2;
     
     
-    ?>
-
-
-</body>
-</html>
+    # PROPIEDADES
+    public $color, $estilo;
+    
+    # CONSTRUCTOR
+    public function __construct(Punto $p1, Punto $p2, $c='black', $e=self::SOLID){
+        
+        parent::__construct($p1,$p2);
+        $this->color=$c;
+        $this->estilo=$e;
+    }
+    
+    # MÉTODOS
+    public function dibujar(){
+        echo "Dibujando..."; # Simulado
+    }
+    
+    public function __toString():string{
+        return parent::__toString()." c: $this->color e: $this-estilo";
+    }
+}
+    
+?>

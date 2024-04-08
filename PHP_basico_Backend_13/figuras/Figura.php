@@ -5,7 +5,7 @@ class Figura{
     private $puntos;
     
     # CONSTRUCTOR
-    public function __canstruct(Punto ...$puntos){
+    public function __construct(Punto ...$puntos){
         
         if(count($puntos)>=3)
             $this->puntos=$puntos;
@@ -14,7 +14,9 @@ class Figura{
     }
     
     # Métodos
-    
+    public function getPunto(int $i=0):Punto{
+        return $this->puntos[$i];
+    }
     
     #Método mover
     public function mover (float $dx=0, float $dy=0):Figura{
@@ -24,17 +26,17 @@ class Figura{
     }
     
     public function setPunto(Punto $p, int $i=0){
-        $this->punto[$i]=$p;
+        $this->puntos[$i]=$p;
     }
     
     public function addPunto(Punto $p):int{
         $this->puntos[]=$p;
-        return counto($this->puntos);
+        return count($this->puntos);
     }
     
     public function removePunto(int $i=0):int{
         if(count($this->puntos)>3)
-            array_splice($this->punto,$i,1);
+            array_splice($this->puntos,$i,1);
         return count($this->puntos);
     }
     
