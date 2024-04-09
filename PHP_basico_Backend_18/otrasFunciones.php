@@ -1,17 +1,20 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento PHP</title>
-</head>
-<body>
+<?php   
     
-    <?php   
-    
-    
-    ?>
+echo "<pre>";
+
+echo getcwd().'<br>';       # Directorio actual
+var_dump(scandir("."));     # Lista de ficheros
+
+echo '<br>';
 
 
-</body>
-</html>
+# Entra en el directorio imagenes (  Debe existir )
+chdir("galeria/imagenes");
+
+echo getcwd().'<br>';       # Directorio actual
+var_dump(scandir("."));     # Lista de ficheros
+
+
+echo "<pre>";
+
+?>
