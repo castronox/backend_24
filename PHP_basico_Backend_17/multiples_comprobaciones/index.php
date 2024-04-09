@@ -10,13 +10,13 @@
 	<h1>Subida de ficheros.</h1>
 	<p>Cómo realizar múltiples comprobaciones sobre el fichero.</p>
 	
-	<form method = "POST" enctype = "multipart / form-data" action = "upload.php">
+	<form method="POST" enctype="multipart/form-data" action="upload.php">
 	
 	<label>Imagen de perfil:</label>
 	<br>
-	<input type = "file" accept = "image/*" name = "fichero">
+	<input type="file" accept="image/*" name="fichero">
 	<br>
-	<input type = "submit" value = "Enviar"
+	<input type="submit" value="Enviar">
 	
 	</form>
     
