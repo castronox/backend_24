@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+		<meta name="description" content="Ejemplo biblioteca">
+		<meta name="keywords" content="Biblioteca, gestión, ejemplo, CIFO">
+		<meta name="author" content="Robert Sallent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+		<link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="/css/estilo.css">
+		
+		<script src="/js/slider.js"></script>
+		
+		<title>Portada de la biblioteca</title>
+	</head>
+	
+	<body>
+		    	<header class="flex-container">
+    		<figure class="flex1 centrado" id="logo">
+    			<a href="/">
+    				<img src="/images/logo.png" alt="Logo Robert Sallent">
+    			</a>
+    		</figure>
+			<hgroup class="flex6">
+				<h1><a href="/">La Biblioteca</a></h1>
+				<h2>Ejemplo de clase</h2>
+			</hgroup>
+			<aside class="flex1" id="redes">
+				<figure>
+					<a href="https://twitter.com/robertsallent">
+    					<img src="/images/twitter.png" alt="Logo Robert Sallent">
+    				</a>
+    			</figure>
+    			<figure>
+    				<a href="https://www.linkedin.com/in/robert-sallent-l%C3%B3pez-4187a866/">
+    					<img src="/images/linkedin.png" alt="Logo Robert Sallent">
+    				</a>
+    			</figure>
+    		</aside>
+		</header>
+        		<form method="post" id="login">
+    			<label>user</label>
+    			<input type="text" name="user" maxlength="16" required="required">
+    			<label>password</label>
+    			<input type="password" name="password" maxlength="16" required="required">
+    			<input type="submit" name="login" value="Login">
+    		</form>
+		    	<nav id="menu">
+            <ul>
+    			<li><a href="/">Inicio</a></li>
+    			<li><a href="/chat">Chat</a></li>
+    			<li><a href="/docs/api">API Restful</a></li>
+    			<li><a href="/contacto">Contacto</a></li>
+    		</ul>
+    		
+    		<ul>
+    			<li><a href="/libro">Lista de libros</a></li>
+    			    		</ul>
+    		
+    	</nav>
+    	        <div id="migas">
+            <span>Te encuentras en: </span>
+            <a href="/">Inicio</a>
+            
+            		</div>
+    		
+		<main>
+    		<h2>Bienvenido...</h2>
+    		<h3>Aplicación de gestión de la biblioteca.</h3>
+    		
+    		<p>Esta aplicación es un ejemplo de clase para los cursos de Base de datos,
+    		PHP y desarrollo de aplicaciones Web en <b><a href="https://serveiocupacio.gencat.cat/ca/Formacio-i-qualificacio/centres-propis-de-formacio/centres-dinnovacio-i-formacio-ocupacional-cifo/CIFO-de-Sabadell/">CIFO Sabadell</a></b>
+    		 y <b><a href="https://serveiocupacio.gencat.cat/es/Formacio-i-qualificacio/centres-propis-de-formacio/centres-dinnovacio-i-formacio-ocupacional-cifo/CIFO-de-Barcelona-La-Violeta/">CIFO Violeta</a></b> (Barcelona)
+    		que imparte <b><a href="https://robertsallent.com">Robert Sallent</a></b>.</p>
+    		
+    		<p>En estos cursos se tratan temas que van desde el desarrollo básico de aplicaciones PHP
+    		hasta el patrón de diseño Modelo Vista Controlador, pasando por gestión de sesiones y
+    		usuarios, ficheros, seguridad, conexión con Base de Datos, XML, JSON, RESTFUL Apis...</p>
+    		<p>Siéntete libre de hacer pruebas usando el perfil de usuario no identificado
+    		y el de bibliotecario pero, si introduces nuevos registros (libros, ejemplares, préstamos...), 
+    		que sean datos cocherentes y sin nigún tipo de mala intención. 
+    		Recuerda que se trata de un ejemplo para docencia.</p>
+    		<p>El acceso para el bibliotecario es:</p>
+    		<ul>
+    			<li>user: <b>biblitecario</b></li>
+    			<li>password: <b>1234</b></li>
+    		</ul>
+    		
+    		
+    		<div id="galeria"></div>		
+		
+			<p>Para más información, puedes seguir a Robert Sallent en 
+        		<b><a href="https://twitter.com/robertsallent">twitter</a></b>,
+        		<b><a href="https://www.linkedin.com/in/robert-sallent-l%C3%B3pez-4187a866/">LinkedIn</a></b> o bien acudir
+        		a los Centos de Innovación y Formación Ocupacional (CIFO) para informarte de los 
+        		cursos totalmente subvancionados que se imparten.
+        	</p>
+        	
+    		<section class="links">
+    			<h2>Otros ejemplos de interés</h2>
+    			<ul>
+    				<li><a href="https://juegayestudia.com">Juega y estudia</a></li>
+    				<li><a href="https://symfofilms.robertsallent.com">SymfoFilms (con Symfony)</a></li>
+    				<li><a href="https://larabikes8.robertsallent.com">LaraBikes (con Laravel)</a></li>
+    				<li><a href="http://simpsons.robertsallent.com">Ejemplo Simpsons (con RMF)</a></li>
+    				<li><a href="http://ejemplos.robertsallent.com">Ejemplos HTML, CSS y JS</a></li>
+    				<li><a href="http://recursos.robertsallent.com">Recursos y utilidades</a></li>
+    			</ul>
+    		</section>
+    		
+    		
+		</main>
+			
+		        <footer>
+			<p>Aplicación Biblioteca, por 
+				<a href="https://robertsallent.com">Robert Sallent</a>.</p>
+			<p>Ejemplo de clase para <a href="https://serveiocupacio.gencat.cat/ca/Formacio-i-qualificacio/centres-propis-de-formacio/centres-dinnovacio-i-formacio-ocupacional-cifo/CIFO-de-Sabadell/">CIFO Vallès</a>
+				/<a href="https://serveiocupacio.gencat.cat/es/Formacio-i-qualificacio/centres-propis-de-formacio/centres-dinnovacio-i-formacio-ocupacional-cifo/CIFO-de-Barcelona-La-Violeta/">CIFO Violeta</a></p>
+		</footer>
+    		
+	</body>
+</html>
+
