@@ -1,0 +1,6 @@
+<?php   
+    
+
+# Solicitamos la URL
+    
+    ?>
