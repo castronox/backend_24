@@ -19,9 +19,11 @@ class Figura{
     }
     
     #Método mover
-    public function mover (float $dx=0, float $dy=0):Figura{
+    public function mover(float $dx = 0, float $dy = 0): Figura {
+        foreach ($this->puntos as $punto) {
+            $punto->mover($dx, $dy);
+        }
         
-        $this->puntos->mover($dx,$dy);
         return $this;
     }
     
@@ -41,6 +43,23 @@ class Figura{
     }
     
     # Método perímetro (Por hacer todavia en ejercicios)
+    
+
+    
+    public function perimetro(): float {
+        $perimetro = 0;
+        
+        for ($i = 0; $i < count($this->puntos); $i++) {
+            
+            $puntoActual = $this->puntos[$i];
+            
+            $puntoSiguiente = $this->puntos[($i + 1) % count($this->puntos)];
+            
+            $perimetro += $puntoActual->distanciaHasta($puntoSiguiente);
+        }
+        
+        return $perimetro;
+    }
     
     public function __toString():string{
         $texto = "Figura: ";
