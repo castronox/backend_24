@@ -1,19 +1,18 @@
-<?php   
+<?php
 
 # Clase coche
+class Coche extends Vehiculo
+{
 
-class Coche extends Vehiculo{
-    
-    public function arrancar(){
+    public function arrancar()
+    {
         echo "Brum Brum";
-        
     }
-    
-    public function __toString(){
-        
-        return "Coche: ". parent::__toString();
+
+    public function __toString()
+    {
+        return "Coche: " . parent::__toString();
     }
 }
-    
-    
-    ?>
+
+?>

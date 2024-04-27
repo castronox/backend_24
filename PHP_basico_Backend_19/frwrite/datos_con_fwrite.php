@@ -1,10 +1,9 @@
-<?php   
-
+<?php
 
 # Abre un fichero para escritura
-$fichero = fopen('textos/fabula.txt','w');
+$fichero = fopen('textos/fabula.txt', 'w');
 
-#Escribe el fichero
+# Escribe el fichero
 fwrite($fichero, 'La tortuga ganó a la liebre. Fin');
 
 # Cierra el fichero

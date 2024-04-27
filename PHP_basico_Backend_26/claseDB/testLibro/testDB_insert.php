@@ -2,7 +2,6 @@
 include '../config/config.php';
 include '../autoload.php';
 
-
 echo "<h2> Guardando un tema... </h2>";
 
 $consulta = "INSERT INTO temas (tema,descripcion)

@@ -8,5 +8,6 @@
  * 
  * @author Robert Sallent <robertsallent@gmail.com>
  */
-
-class UploadException extends Exception{}
+class UploadException extends Exception
+{
+}

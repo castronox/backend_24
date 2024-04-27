@@ -1,5 +1,4 @@
 <?php
-
 include '../config/config.php';
 include '../autoload.php';
 # Prueba de update
@@ -11,7 +10,7 @@ $filas = DB::update($consulta);
 
 echo "<p>Filas afectadas: $filas</p>";
 
-#Comprobacion de que se ha actualizado correctamente
+# Comprobacion de que se ha actualizado correctamente
 echo "<pre>";
 var_dump(DB::select("SELECT * FROM temas WHERE id = 10"));
 echo "</pre>";

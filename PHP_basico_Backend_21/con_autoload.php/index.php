@@ -1,5 +1,4 @@
-<?php   
-    
+<?php
 include 'config/config.php';
 include 'libraries/autoload.php';
 
@@ -13,10 +12,10 @@ echo "<p>Se ha creado $moto</p>";
 $moto->arrancar();
 
 # Crea un coche
-$coche = new Coche('toyota','prius');
+$coche = new Coche('toyota', 'prius');
 echo "<p>Se ha creado $coche.</p>";
 
 $coche->arrancar();
-    
+
 ?>
 

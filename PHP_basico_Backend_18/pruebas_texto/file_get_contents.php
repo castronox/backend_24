@@ -1,5 +1,5 @@
-<?php   
-echo "<h2> Contenido de un fichero </h2>" ;
+<?php
+echo "<h2> Contenido de un fichero </h2>";
 
 # file_get_contents() abre el fichero,
 # Lee el contenido retornando un string y finalmente lo cierra
@@ -15,5 +15,5 @@ echo "<h2> Contenido de una URL </h2>";
 $texto = file_get_contents('http://juegayestudia.com/css/estilo.css');
 
 echo "<pre> $texto </pre>";
-    
+
 ?>

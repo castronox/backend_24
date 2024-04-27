@@ -1,16 +1,14 @@
 <?php
 
+// Las sentencias se generalizan principalmente por ;
+$i = 1;
 
-//Las sentencias se generalizan principalmente por ;
+// Pueden agruparse encapsulandose en llaves.
 
-    $i=1;
-    
-//Pueden agruparse encapsulandose en llaves.
-
-    while($i <= 5){
-        echo $i. '<br>';
-        $i++;
-    }
+while ($i <= 5) {
+    echo $i . '<br>';
+    $i ++;
+}
     
 
     

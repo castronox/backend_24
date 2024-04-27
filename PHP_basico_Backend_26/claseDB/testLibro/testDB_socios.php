@@ -10,9 +10,7 @@ echo "<pre>";
 var_dump(DB::select("SELECT * FROM socios WHERE id=5"));
 echo "</pre>";
 
-
 echo "Recuperando  el socio 5000...(No existe)</h2>";
-
 
 echo "<pre>";
 var_dump(DB::select("SELECT * FROM socios WHERE id=5000"));

@@ -1,15 +1,14 @@
 
-<?php   
-
-$to     = "castronox@outlook.es"; # Receptor
-$subject= "Test de envío local" ;
+<?php
+$to = "castronox@outlook.es"; # Receptor
+$subject = "Test de envío local";
 $headers = "MIME-Version: 1.0\r\n";
-$headers .="Content-type: text/html; charset=utf-8\r\n";
-$headers .="From: NOREPLY <noreply@cristian.com>\r\n";
+$headers .= "Content-type: text/html; charset=utf-8\r\n";
+$headers .= "From: NOREPLY <noreply@cristian.com>\r\n";
 
-#Mensaje en HTML (Uso de sintaxis HEREDOC que es mas sencilla para esto)
+# Mensaje en HTML (Uso de sintaxis HEREDOC que es mas sencilla para esto)
 
-$message= <<<EOD
+$message = <<<EOD
 <html lang="es">
     <head>
         <title>Test de envío de mail</title>
@@ -22,7 +21,7 @@ $message= <<<EOD
 </body>
 </html>
 EOD;
-echo mail($to, $subject, $message, $headers)? "ENVIADO" : "NO ENVIADO";
-    
-    ?>
+echo mail($to, $subject, $message, $headers) ? "ENVIADO" : "NO ENVIADO";
+
+?>
  <<<<<

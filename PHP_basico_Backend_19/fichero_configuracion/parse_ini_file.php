@@ -1,11 +1,9 @@
-<?php   
+<?php
 echo "<pre>";
-
 
 # Analizar sin tener en cuenta la selecciones
 $array = parse_ini_file("config.ini");
 print_r($array);
-
 
 echo "<br><br>";
 
@@ -17,6 +15,4 @@ print_r($array);
 
 echo "</pre>";
 
-
-    
-    ?>
+?>
