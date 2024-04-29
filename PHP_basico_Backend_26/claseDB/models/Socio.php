@@ -59,19 +59,19 @@ Socio{
                     '$this->dni',
                     '$this->nombre',
                     '$this->apellidos',
-                     $this->nacimiento,
+                    '$this->nacimiento',
                     '$this->email',
                     '$this->direccion',
-                     $this->cp,
+                    '$this->cp',
                     '$this->poblacion',
                     '$this->provincia',
-                     $this->telefono,
+                    '$this->telefono',
                     '$this->foto'                     
                      )";
-        # Guardamos nuevo libro y actualizamos el id con el autonumérico.
+        # Guardamos nuevo socio y actualizamos el id con el autonumérico.
         $this->id = DB::insert($consulta);
         
-        # Retornamos el id del nuevo libro (o 0 si no hay un autoincremental).
+        # Retornamos el id del nuevo Socio (o 0 si no hay un autoincremental).
         return $this->id;
     }
     
@@ -80,11 +80,11 @@ Socio{
 #------------------------------------------------------------------------------   
         
 
-        # Método que actualizara un libro en la base de datos.
+        # Método que actualizara un socio en la base de datos.
         
-        # EJEMPLO: Libro::delete(5);
+        # EJEMPLO: Socio::update();
 
-    public function update(): int {
+    public function update():int {
        
         # Prepara una consulta ( OJO con las comillas y las comas)
         $consulta = "UPDATE socios SET
@@ -99,9 +99,9 @@ Socio{
         poblacion   =       '$this->poblacion',
         provincia   =       '$this->provincia',
         telefono    =       '$this->telefono',
-        foto        =       '$this->foto',
+        foto        =       '$this->foto'
 
-           WHERE id =        $this->id  ";
+           WHERE id =        $this->id";
         
         return DB::update($consulta);
         
@@ -110,11 +110,11 @@ Socio{
     
 #-------------------------------------------------------------------------------    
     
-    # Método estático que borra un libro de la base de datos 
+    # Método estático que borra un socio de la base de datos 
     
-    # EJEMPLO : Libro::delete(5);
+    # EJEMPLO : Socio::delete(5);
     
-    public function delete(int $id): int{
+    public static function delete(int $id): int{
         
         $consulta = "DELETE FROM socios WHERE id = $id";
         
@@ -123,9 +123,9 @@ Socio{
 
 #-------------------------------------------------------------------------------    
     
-    # Método de objeto que borra un libro de la base de datos 
+    # Método de objeto que borra un socio de la base de datos 
     
-    # EJEMPLO: $libro->deleteObject();
+    # EJEMPLO: $socio->deleteObject();
     
     public function deleteObject(): int{
         
@@ -138,7 +138,7 @@ Socio{
     
     # Método que realiza consultas de totales
     
-    # EJEMPLO: Libro::total('AVG','socios');
+    # EJEMPLO: Socio::total('AVG','socios');
     
     public static function total (string $operacion = 'COUNT', # Calculo a realizar
         string $campo = '*'){ # Campo sobre el que realizar un cálculo.
