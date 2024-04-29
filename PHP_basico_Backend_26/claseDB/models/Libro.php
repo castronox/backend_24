@@ -50,7 +50,7 @@ Libro
         # Prepara una consulta ( ojo con las comillas y las comas )
         $consulta = "UPDATE libros SET
 
-        isbn                   =       '$this->isbn',
+        isbn                   =      '$this->isbn',
         titulo                 =      '$this->titulo',
         editorial              =      '$this->editorial',
         idioma                 =      '$this->idioma',
