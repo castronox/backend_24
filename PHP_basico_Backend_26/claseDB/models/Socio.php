@@ -148,6 +148,30 @@ Socio{
     
 #---------------------------------------------------------------------------------
     
+    # Método de busqueda y orden
+    
+    # Ejemplo: Socio::getFiltered('nombre', 'apellidos','nacimiento' 'ASC');
+    
+    public static function getFiltered(
+        
+        string $campo   = 'nombre',         # Campo con el que filtrara.
+        string $valor   = '' ,              # Aquí introducimos el valor que el usuario busque.
+        string $orden   = 'nacimiento',     # Campo para el orden por ID.
+        string $entido  = 'ASC',            # Sentido ascendente de la orientación por defecto.
+        
+        ):array{
+        
+            $consulta = "SELECT * FROM socios WHERE $campo LIKE '%$valor%' ORDER BY $orden $entido";
+            
+            return DB::selectAll($consulta, self::class);
+    }
+    
+    
+  
+#---------------------------------------------------------------------------------
+
+#---------------------------------------------------------------------------------
+    
     # Método __toString(), se utiliza principalmente en el test
     
     public function __toString(): string{

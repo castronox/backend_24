@@ -88,6 +88,24 @@ Libro
     {
         return DB::total('libros', $operacion, $campo);
     }
+    
+    # Recuperar Libros aplicando filtro y orden
+    # Ejemplo: Libro::getFiltered('editorial', 'Planeta', 'titulo', 'ASC');
+    
+    public static function getFiltered(
+        
+        string $campo = 'titulo',           # Campo con el que va a filtrar
+        string $valor = '',                 # Aquí se introducirá el valor que el usuario busque.
+        string $orden = 'id',               # Campo para el orden por ID
+        string $entido= 'ASC'               # Sentido ascendente de la orientación
+        
+        ):array{
+        
+            
+            $consulta = "SELECT * FROM libros WHERE $campo LIKE '%$valor%' ORDER BY $orden $entido";
+
+            return DB::selectAll($consulta, self::class);
+    }
 
     # El método __toString(), lo usaremos principalmente en test
     public function __toString(): string
