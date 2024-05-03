@@ -20,6 +20,9 @@ define('DB_CHARSET', 'utf8'); // codificación
 
 // OTROS PARAMETROS
 define('DEBUG', true); // para depuración
+
+define('DB_CLASS','DB');
+define('SGDB','mysql');
     
     
     
