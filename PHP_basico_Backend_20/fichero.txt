@@ -1,0 +1,8 @@
+La función fopen() no lanza un error si no encuentra un fichero, 
+puesto que solamente retorna false.
+
+La arroba impide que se imprima la advertencia que muestra fopen()
+sobre el documento.
+
+Este es un fichero de texto usado para que se imprima la advertencia que 
+muestra fopen() sobre el documento.
