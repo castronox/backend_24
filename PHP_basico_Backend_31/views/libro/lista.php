@@ -31,9 +31,9 @@
             	<td><?=$libro->editorial?></td>
             
             <td>
-            	<a href='index.php?controlador=libro/show&id<?=$libro->id?>'>Ver</a>
-            	<a href='index.php?controlador=libro/edit&id<?=$libro->id?>'>Editar</a>
-            	<a href='index.php?controlador=libro/delete&id<?=$libro->id?>'>Borrar</a>
+            	<a href='index.php?controlador=libro/show&id=<?=$libro->id?>'>Ver</a>
+            	<a href='index.php?controlador=libro/edit&id=<?=$libro->id?>'>Editar</a>
+            	<a href='index.php?controlador=libro/delete&id=<?=$libro->id?>'>Borrar</a>
             </td>            
          </tr>
          <?php }?>
