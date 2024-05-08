@@ -36,7 +36,7 @@ define('APP_NAME','FastLight Framework'); // Título de la aplicación.
 define('APP_TYPE', 'WEB');                // Tipo de aplicación: WEB o API.
 
 // Controlador y método por defecto (solamente para APP_TYPE WEB).
-define('DEFAULT_CONTROLLER', 'WelcomeController');
+define('DEFAULT_CONTROLLER', 'Welcome');
 define('DEFAULT_METHOD', 'index');
    
 // Email del administrador, para la operación de "contacto"
